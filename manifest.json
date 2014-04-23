@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+
+  "name": "Sypher",
+  "description": "Hash passkeys into passwords.",
+  "version": "0.1",
+
+  "browser_action": {
+    "default_icon": "icon.png"
+    // "default_popup": "popup.html"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["sypher.js"]
+    }
+  ]
+}
